@@ -50,3 +50,29 @@ mongodb
     mongodb.vm.network "forwarded_port", guest: 27017, host: 8004
     mongodb.vm.network "private_network", ip: "10.0.0.12"
 ```
+
+# Dependecies
+Install vagrant:
+
+```
+sudo apt-get install dpkg-dev virtualbox-dkms
+# Download Vagrant from : https://www.vagrantup.com/downloads-archive.html (Choose
+wget https://dl.bintray.com/mitchellh/vagrant/vagrant_*.deb
+#Update linux headers (needed on some cases)
+sudo apt-get install linux-headers-$(uname -r)
+sudo dpkg-reconfigure virtualbox-dkms
+#Source : http://eon01.com/blog/how-to-install-and-use-vagrant/
+```
+
+Install SaltStack:
+```
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:saltstack/salt
+sudo apt-get update
+sudo apt-get install salt-master
+sudo apt-get install salt-minion
+service salt-master start
+service salt-minion start
+#Source: http://eon01.com/blog/salt-stack-tutorial-for-beginners/
+```
+
