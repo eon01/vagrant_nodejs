@@ -61,8 +61,8 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_*.deb
 #Update linux headers (needed on some cases)
 sudo apt-get install linux-headers-$(uname -r)
 sudo dpkg-reconfigure virtualbox-dkms
-#Source : http://eon01.com/blog/how-to-install-and-use-vagrant/
 ```
+Source : http://eon01.com/blog/how-to-install-and-use-vagrant/
 
 Install SaltStack:
 ```
@@ -73,6 +73,5 @@ sudo apt-get install salt-master
 sudo apt-get install salt-minion
 service salt-master start
 service salt-minion start
-#Source: http://eon01.com/blog/salt-stack-tutorial-for-beginners/
 ```
-
+Source: http://eon01.com/blog/salt-stack-tutorial-for-beginners/
